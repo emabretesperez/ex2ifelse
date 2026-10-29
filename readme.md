@@ -1,3 +1,20 @@
-# Título
+# Ex2 if/else espiral
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod convallis magna ut pulvinar. Nulla iaculis, metus in semper vestibulum, lorem quam fringilla tellus, eu varius leo dui ac neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus ultrices ante, ut suscipit est euismod ut. Duis sit amet dictum turpis. Fusce non turpis porta nisi iaculis eleifend. Donec eget lobortis risus. Proin molestie tincidunt elit. Donec a enim ac neque tristique molestie. Sed nibh massa, dignissim at ipsum non, volutpat aliquam erat. Sed tincidunt quis urna a semper. Phasellus leo orci, imperdiet et ullamcorper non, finibus eu nunc. Duis vel ligula ac orci tincidunt aliquam. Suspendisse potenti. Sed congue lectus at aliquet cursus. 
+O meu projeto é uma espiral interativa que representa um organismo vivo a respirar, a espiral roda sozinha, pulsa de forma natural e reage à posição e aos cliques do rato.
+
+**O Conceito e a Representação da Respiração**
+
+Para dar a sensação de que a espiral está viva, utilizei o frameCount em conjunto com a função matemática sin():
+- O frameCount funciona como o relógio interno do computador, somando +1 a cada frame (cerca de 60 vezes por segundo) para contar o tempo que já passou.
+- Como o tempo estaria sempre a subir, a função sin() utiliza nesse relógio e transforma-o numa onda suave que vai e volta entre (0 e 1)
+- É esta combinação que faz com que a espiral se expanda e se retraia ciclicamente, simulando exatamente o ritmo natural da respiração.
+- Decidi colocar bolinhas para ter mais movimento.
+
+**A Interatividade (Cores e o Salto)**
+Nós interagi-mos com o projeto, mudando as cores consoante o mover do rato e no clique no centro da espiral, que a faz saltar.
+
+**As Cores dos Quadrantes** 
+O ecrã está dividido em quatro zonas com base na posição do cursor (mouseX e mouseY). Dependendo do sítio onde colocas o rato, as cores da espiral mudam instantaneamente (verde, vermelho, azul e amarelo).
+
+**O Efeito do salto**
+ Se clicares com o rato exatamente no centro da espiral, ela dá um salto rápido (como se levasse um susto), encolhendo de imediato e depois volta ao seu ritmo normal de respiração graças a uma variável de impulso. 
