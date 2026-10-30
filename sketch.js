@@ -3,7 +3,7 @@ let tamanhoBase = 0.25;
 let impulsoRecolher = 0; // Controla o efeito de recolher rápido
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
 }
 
